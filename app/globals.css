@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-blush text-ink font-serif text-lg leading-relaxed antialiased; }
+:focus-visible { outline: 3px solid #EFBBBD; outline-offset: 3px; }
+.on-light :focus-visible { outline-color: #436B5C; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
